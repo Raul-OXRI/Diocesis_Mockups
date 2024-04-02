@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototipo de sistema para la Diocesis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="/img/logo_Diocesis.png" />
+</head>
+<body>
+
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="">Diocesis de la Verapaz</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/Index.html">Inicio <i class="bi bi-house-door-fill"></i></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/constacisa.html">Confirmaciones <i class="bi bi-file-earmark-fill"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/parroquias.html">Parroquias <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-cross"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 2l-.117 .007a1 1 0 0 0 -.883 .993v4h-4a1 1 0 0 0 -1 1v4l.007 .117a1 1 0 0 0 .993 .883h4v8a1 1 0 0 0 1 1h4l.117 -.007a1 1 0 0 0 .883 -.993v-8h4a1 1 0 0 0 1 -1v-4l-.007 -.117a1 1 0 0 0 -.993 -.883h-4v-4a1 1 0 0 0 -1 -1h-4z" /></svg></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/usuarios.html">Usuarios <i class="bi bi-people-fill"></i></a>
+                  </li>
+                  
+                </ul>
+                <ul class="d-flex navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Cerras seccion <i class="bi bi-box-arrow-right"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!--  REGISTRO DE CONFIRMACIONES  -->
+    <section>
+      <div class="container mt-5 my-5">
+        <div class="row">
+      
+          <div class="row col-xs-12">
+            <!-- formulario-->
+            <form>
+              <fieldset>
+                <h1 >Registro de Confirmaciones</h1>
+                
+                <!--APARTADO DE REGISTRO Y DATOS DEL REGISTRO -->
+                <div class="mb-3">
+                  <div class="row">
+                    <h3 class="my-5">Datos del confirmando</h3>
+                    
+                      <div class="col">
+                        
+                        <div class="mb-3">
+                          <label for="txtnombre" class="form-label">Nombre</label>
+                          <input type="text" id="txtnombre" name="txtnombre" class="form-control name_list" placeholder="Nombre del confirmando">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtapellido" class="col-form-label" style="margin-right:5px">Apellido</label>
+                          <input type="text" name="txtapellido" id="txtapellido" class="form-control name_list" placeholder="Apellido del confirmando">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtfechanacimiento" class="col-form-label" style="margin-right:5px">Fecha de nacimiento</label>
+                          <input type="date" name="txtfechanacimiento" id="txtfechanacimiento" class="form-control name_list">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtbautizado" class="col-form-label" style="margin-right:5px">Bautizado</label>
+                          <input type="text" id="txtbautizado" name="txtbautizado" class="form-control name_list" placeholder="Lugar de bautizado">
+                        </div>
+                      </div>
+                      <div class="col">
+                        
+                        <div class="mb-3">
+                          <label for="txtdepartamento" class="col-form-label" style="margin-right:5px">Departamento</label>
+                          <input type="text" id="txtdepartamento" name="txtdepartamento" class="form-control name_list" placeholder="Nombre del departamento">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtmunicipio" class="col-form-label" style="margin-right:5px">Municipio</label>
+                          <input type="text" id="txtmunicipio" name="txtmunicipio" class="form-control name_list" placeholder="Nombre del múnicipio">
+
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtfechaconfirmacion" class="col-form-label" style="margin-right:5px">Fecha de Confirmación</label>
+                          <input type="date" name="txtfechaconfirmacion" id="txtfechaconfirmacion" class="form-control name_list">
+                        </div>
+                        <div class="mb-5">
+                          <label for="txtedad" class="form-label">Edad</label>
+                          <input disabled type="text" id="txtedad" name="txtedad" class="form-control name_list" placeholder="Edad del confirmado ">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <hr>
+                  <!-- APARTADO PADRES DE FAMILIA -->
+                  <div class="mb-3">
+                    <div class="row">
+                      
+                      <h3 class="my-5">Datos de los padres</h3>
+
+                      <div class="mb-3">
+                        <label for="txtEstado" class="col-form-label" style="margin-right:5px">Estado de los padres</label>
+                        <select name="txtEstado" id="txtEstado" class="form-control" style="max-width: 624px;">
+                          <option value="" disabled selected style="display:none;">Seleccione un estado</option>
+                          <option>Casados</option>
+                          <option>Juntos</option>
+                          <option>Viudo</option>
+                          <option>Viuda</option>
+                          <option>Separados</option>
+                          <option>Soltero/Soltera</option>
+                        </select>
+                      </div>
+
+                        <div class="col mt-5">
+                            <h5>Datos de la madre</h5>
+                            <div class="mb-3">
+                                <label for="txtnombre_madre" class="form-label">Nombre</label>
+                                <input type="text" id="txtnombre_madre" name="txtnombre_madre" class="form-control name_list" placeholder="Nombre de la madre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtapellido_madre" class="col-form-label" style="margin-right:5px">Apellido</label>
+                                <input type="text" name="txtapellido_madre" id="txtapellido_madre" class="form-control name_list" placeholder="Apellido de la madre">
+                            </div>
+                            <div class="mb-5">
+                                <label for="txtfechanacimiento_madre" class="col-form-label" style="margin-right:5px">Fecha de nacimiento</label>
+                                <input type="date" name="txtfechanacimiento_madre" id="txtfechanacimiento_madre" class="form-control name_list">
+                            </div>
+                        </div>
+                        <div class="col mt-5">
+                            <h5>Datos del padre</h5>
+                            <div class="mb-3">
+                                <label for="txtnombre_padre" class="form-label">Nombre</label>
+                                <input type="text" id="txtnombre_padre" name="txtnombre_padre" class="form-control name_list" placeholder="Nombre del padre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtapellido_padre" class="col-form-label" style="margin-right:5px">Apellido</label>
+                                <input type="text" name="txtapellido_padre" id="txtapellido_padre" class="form-control name_list" placeholder="Apellido del padre">
+                            </div>
+                            <div class="mb-5">
+                                <label for="txtfechanacimiento_padre" class="col-form-label" style="margin-right:5px">Fecha de nacimiento</label>
+                                <input type="date" name="txtfechanacimiento_padre" id="txtfechanacimiento_padre" class="form-control name_list">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <!-- SECCION DE PADRINOS  -->
+
+                <div class="mb-3">
+                  <div class="row">
+                    <h3 class="my-5">Datos de los padrinos</h3>
+                    
+                    <div class="col mt-5">
+                      <h5>Datos de la madrina</h5>
+                      <div class="mb-3">
+                          <label for="txtnombre_madre" class="form-label">Nombre</label>
+                          <input type="text" id="txtnombre_madre" name="txtnombre_madre" class="form-control name_list" placeholder="Nombre de la madrina">
+                      </div>
+                      <div class="mb-3">
+                          <label for="txtapellido_madre" class="col-form-label" style="margin-right:5px">Apellido</label>
+                          <input type="text" name="txtapellido_madre" id="txtapellido_madre" class="form-control name_list" placeholder="Apellido de la madrina">
+                      </div>
+                      <div class="mb-5">
+                          <label for="txtfechanacimiento_madre" class="col-form-label" style="margin-right:5px">Fecha de nacimiento</label>
+                          <input type="date" name="txtfechanacimiento_madre" id="txtfechanacimiento_madre" class="form-control name_list">
+                      </div>
+                  </div>
+                  <div class="col mt-5">
+                      <h5>Datos del padrino</h5>
+                      <div class="mb-3">
+                          <label for="txtnombre_padre" class="form-label">Nombre</label>
+                          <input type="text" id="txtnombre_padre" name="txtnombre_padre" class="form-control name_list" placeholder="Nombre del padrino">
+                      </div>
+                      <div class="mb-3">
+                          <label for="txtapellido_padre" class="col-form-label" style="margin-right:5px">Apellido</label>
+                          <input type="text" name="txtapellido_padre" id="txtapellido_padre" class="form-control name_list" placeholder="Apellido del padrino">
+                      </div>
+                      <div class="mb-5">
+                          <label for="txtfechanacimiento_padre" class="col-form-label" style="margin-right:5px">Fecha de nacimiento</label>
+                          <input type="date" name="txtfechanacimiento_padre" id="txtfechanacimiento_padre" class="form-control name_list">
+                      </div>
+                  </div>
+                  </div>
+              </div>
+                
+                </div>
+                <button type="submit" class="btn btn-primary my-5">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section>
+      <footer class="bg-dark mt-4 py-4 text-white">
+        <div class="d-flex flex-column align-items-center">
+          <div>
+            <a href="#" class="link-light text-decoration-none link-opacity-75-hover">Más información</a>
+          </div>
+          <div class="mt-2 fst-italic">
+            &copy; &dash; <strong>Diócesis de la Verapaz</strong>
+          </div>
+        </div>
+      </footer>
+    </section>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/scrip.js"></script>
+</body>
+</html>
